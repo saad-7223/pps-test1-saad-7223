@@ -1,13 +1,20 @@
- gcc -g p3original.c
- ./a.out
-Enter 2 numbers : 
-1                   //output 1
-2
-Sum of 1 + 2 = 3
-
- gcc -g p3original.c
- ./a.out
-Enter 2 numbers : 
-25                  //output 2
-75
-Sum of 25 + 75 = 100 
+#include<stdio.h>
+//using pass by reference
+int input(int *a,int *b){
+  printf("Enter 2 numbers : \n");
+  scanf("%d \n %d",a,b);
+}
+int add(int a,int b,int *sum){
+  *sum = a+b;
+}
+int output(int a,int b,int c){
+  printf("Sum of %d + %d = %d",a,b,c);
+}
+int main()
+{
+  int x,y,z;
+  input(&x,&y);
+  add(x,y,&z);
+  output(x,y,z);
+  return 0;
+}

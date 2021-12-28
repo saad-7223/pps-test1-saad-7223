@@ -1,3 +1,10 @@
+gcc -g p3original.c
+ ./a.out
+Enter 2 numbers : 
+34
+56
+Sum of 34 + 56 = 90 
+ gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -16,7 +23,7 @@ Reading symbols from a.out...done.
 (gdb) b main
 Breakpoint 1 at 0x7fc: file p3original.c, line 14.
 (gdb) r
-Starting program: /home/runner/pps-test1-saad-7223/a.out 
+Starting program: /home/runner/pps-test1-saad-1/a.out 
 warning: Error disabling address space randomization: Operation not permitted
 
 Breakpoint 1, main () at p3original.c:14
@@ -31,6 +38,4 @@ n
 18    output(x,y,z);
 (gdb) n
 19    return 0;
-(gdb) n
-20  }(gdb) Quit
 (gdb) 
