@@ -6,7 +6,7 @@ int input(){
   return n;
 }
 int add(int a,int b){
-  int sum =a+b;
+  int sum=a+b;
   return sum;
 }
 int output(int a,int b,int sum){

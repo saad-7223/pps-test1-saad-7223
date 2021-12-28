@@ -1,6 +1,21 @@
- gcc -g p2original.c
- ./a.out
-Enter a number = 2
-Enter a number = 3   //OUTPUT 2
-sum of 2 + 3 = 5 
- gdb a.out
+#include<stdio.h>
+int input(){
+  int n;
+  printf("Enter a number = ");
+  scanf("%d",&n);
+  return n;
+}
+int add(int a,int b){
+  int sum =a+b;
+  return sum;
+}
+int output(int a,int b,int sum){
+  printf("sum of %d + %d = %d",a,b,sum);
+}
+int main(void){
+  int a,b,sum;
+  a=input();
+  b=input();
+  sum=add(a,b);
+  output(a,b,sum);
+}

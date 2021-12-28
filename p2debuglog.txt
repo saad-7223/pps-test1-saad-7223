@@ -1,4 +1,8 @@
-gdb a.out
+gcc -g p2original.c;./a.out
+Enter a number = 12
+Enter a number = 345
+sum of 12 + 345 = 357 
+ gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -31,9 +35,3 @@ Enter a number = n
 20    output(a,b,sum);
 (gdb) n
 21  }
-(gdb) n
-__libc_start_main (main=0x55bf850007bd <main>, argc=1, argv=0x7fff1d89ab78, 
-    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
-    stack_end=0x7fff1d89ab68) at ../csu/libc-start.c:344
-344 ../csu/libc-start.c: No such file or directory.
-(gdb) 
